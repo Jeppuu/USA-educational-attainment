@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #040404;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  color: midnightBlue;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#description {
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.map-container {
+  flex: 1;
+  max-width: 900px;
+}
+.legend-container {
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+.county:hover {
+  stroke: midnightBlue;
+  stroke-width: 2px;
+  opacity: 0.4;
+}
+
+.label {
+  font-size: 0.8em;
+}
+
+#tooltip {
+  position: absolute;
+  background-color: midnightBlue;
+  color: white;
+  border: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 10px;
+  opacity: 0;
+}
+
+#controls {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: none;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#controls button,
+#controls input {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  display: block;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+}
+#controls button{
+  font-size: 18px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#controls input {
+  font-size: 14px;
+  padding: 9px 10px;
+}
+
+#details {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+}
+#details a {
+  text-decoration: none;
+  color: #46468C;
+  font-weight: 600;
+}
+#details a:hover {
+  color: #7D7DAE;
+}
+
+#close-details {
+  display: block;
+  margin-bottom: 10px;
+  background-color: #f1f1f1;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#close-details:hover {
+  background-color: #e6e6e6;
+}
+
+#details-content {
+  max-width: 200px;
+}

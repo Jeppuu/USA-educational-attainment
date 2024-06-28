@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USA Educational Attainment</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+  </head>
+  <body>
+    <h1 id="title">United States Educational Attainment</h1>
+    <span id="description"
+      >Percentage of adults age 25 and older with a bachelor's degree or higher
+      (2010-2014)</span
+    >
+    <div id="controls">
+      <button id="zoom-in">+</button>
+      <button id="zoom-out">-</button>
+      <button id="reset">&#8634;</button>
+      <input type="text" id="search" placeholder="Search for a county..." />
+    </div>
+    <div id="chart-container" class="container">
+      <div id="map" class="map-container"></div>
+      <div id="legend" class="legend-container"></div>
+      <div id="details">
+        <button id="close-details">X</button>
+        <div id="details-content"></div>
+      </div>
+    </div>
+    <div id="tooltip"></div>
+    <script src="script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
